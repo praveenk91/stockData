@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Stock template{% endblock %}
+
+{% block content %}
+<h2>{{stocks.name}}</h2>
+   <p> {{Curr_time}}</p>
+   
+
+   <p>{{stocks.name}} opened at Rs.{{stocks.openprice}} today, after closing at Rs.{{stocks.prevclose}} yesterday. As of  {{stocks.time}} A.M., {{stocks.vol}} one stock was traded at Rs.{{stocks.price}} with a difference of Rs.{{stocks.chng}} from previous day's close. The opening bid price was {{stocks.bidPrice}} and the opening offer price was {{stocks.offrPrice}}. The average buy quantity was observed to be {{stocks.buyQty}} and the average sell quantity was {{stocks.buyQty}}.
+ 
+   
+
+{% endblock %}
